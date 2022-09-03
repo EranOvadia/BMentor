@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo&display=swap%27");
+
+
+* {
+    font-family: 'Heebo', sans-serif;
+    color: white;
+}
+
+body {
+    background-image: url("https://img.wallpapersafari.com/desktop/728/410/59/52/0kjwKe.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+.left {
+    position: absolute;
+    bottom: 0;
+    height: 20rem;
+    left: 0;   
+}
+
+.right {
+    position: absolute;
+    bottom: 0;
+    height: 20rem;
+    right: 0;
+    -webkit-transform: scaleX(-1);
+}
