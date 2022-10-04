@@ -117,3 +117,8 @@ h1 {
         transform: scale(100%);
     }
 }
+
+button {
+    color: aqua;
+    background-color: black;
+}
