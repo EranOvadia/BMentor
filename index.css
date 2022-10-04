@@ -32,13 +32,12 @@ h1 {
 }
 
 
-
-.ball-div {
+.ball-div-right {
     background-color: red;
     border-radius: 100%;
-    left: calc(50% - 70px);
+    left: calc(50% - 70px + 25%);
     position: absolute;
-    right: calc(50% - 30px);
+    right: calc(50% - 30px + 25%);
     animation: bounce 1s ease-in-out infinite;
     animation-fill-mode: both;
     animation-direction: alternate;
@@ -46,11 +45,43 @@ h1 {
     width: 6rem;
 }
 
-.ball-span {
+.ball-span-right {
     border-radius: 100%;
     bottom: 32.5%;
-    left: calc(50% - 50px);
-    right: calc(50% - 50px);
+    left: calc(50% - 50px + 25%);
+    right: calc(50% - 50px + 25%);
+    position: absolute;
+    content: '';
+    background-color: black;
+    filter: blur(3px);
+    width: 50px;
+    height: 5px;
+    animation: shadow 1s ease-in-out infinite;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+    z-index: -1;
+    top: 95%;
+}
+
+
+.ball-div-left {
+    background-color: red;
+    border-radius: 100%;
+    left: calc(50% - 70px - 25%);
+    position: absolute;
+    right: calc(50% - 30px - 25%);
+    animation: bounce 1s ease-in-out infinite;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+    height: 6rem;
+    width: 6rem;
+}
+
+.ball-span-left {
+    border-radius: 100%;
+    bottom: 32.5%;
+    left: calc(50% - 50px - 25%);
+    right: calc(50% - 50px - 25%);
     position: absolute;
     content: '';
     background-color: black;
